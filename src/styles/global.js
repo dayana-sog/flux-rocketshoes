@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import background from '../assets/images/background.svg';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
   * {
     margin: 0;
@@ -18,7 +18,7 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 14px 'Playfair Display', serif;
+    font: 14px 'Roboto Slab', serif;
   }
 
   #root {

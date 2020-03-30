@@ -12,13 +12,13 @@ import * as CartActions from '../../store/module/cart/actions';
 
 import { Container, ProductTable, Total } from './styles';
 
-function Cart({ cart, total, RemoveFromCart, UpdateAmount }) {
+function Cart({ cart, total, RemoveFromCart, UpdateAmountRequest }) {
   function increment(product) {
-    UpdateAmount(product.id, product.amount + 1);
+    UpdateAmountRequest(product.id, product.amount + 1);
   }
 
   function decrement(product) {
-    UpdateAmount(product.id, product.amount - 1);
+    UpdateAmountRequest(product.id, product.amount - 1);
   }
 
   return (
